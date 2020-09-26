@@ -8,22 +8,12 @@ body
 }
 .hd
 {
-	background-image: linear-gradient(to right, rgb(32, 16, 55), 	rgb(148, 57, 172));
-	background-image:url("../pictures/background.jpg");
-}
-.home
-{
-	background-position:fit;
-	background-size: cover;
-	text-align:center;
-	color:white;
-	background-image:url("../pictures/background.jpg");
-	min-height: 86vh;
-	
+  background: linear-gradient(to bottom, #372750 ,#4e0a75);
+  position: static;;
 	
 }
 .my-navbar {
-  background-color: #201037;
+  background: linear-gradient(to bottom, #372750 ,#4e0a75);
   min-height: 10vh;
 }
 .nav-link
@@ -36,10 +26,28 @@ body
 {
 
 }
+main
+{
+ 
+}
+.home
+{
+	background-position:bottom;
+	background-size: cover;
+	text-align:center;
+	color:white;
+  background-image:url("../pictures/background.jpg");
+  
+  background-size: cover;;
+	min-height: 86vh;
+	
+	
+}
+
 #sponsor
 {
-	padding-top:3%
-	
+  padding-top:3%;
+  color:#004321;
 }
 #logo
 {
@@ -272,7 +280,9 @@ body
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) 
+{
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
