@@ -99,19 +99,19 @@
     transform: rotate(0deg);
 	
   }
-  33%{
+  25%{
 	
-	transform: rotate(360deg);
+	transform: rotate(36deg);
   }
-  66%
+  75%
   {	
   	
-   transform: rotate(720deg);
+   transform: rotate(-18deg);
 	
   }
   100%
   {
-	transform: rotate(1080deg);  
+	transform: rotate(0deg);  
   }
 }
 .cc
@@ -137,22 +137,6 @@
   {	
   	transform:translateX(0%);	
   }
-}
-#logo1
-{
-	position:fixed;
-}
-#logo2
-{
-	position:fixed;
-}
-#logo3
-{
-	position:fixed;
-}
-#logo4
-{
-	position:fixed;
 }
 
 
