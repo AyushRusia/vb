@@ -1,7 +1,7 @@
 function timer()
 {
     // Set the date we're counting down to
-var countDownDate = new Date("Oct 6, 2020 00:00:00").getTime();
+var countDownDate = new Date("Oct 13, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -31,18 +31,18 @@ var x = setInterval(function() {
   }
 }, 1000);
 }
-function chang_sign()
-	{
-		var x=document.getElementsByClassName("collapsing");
-		var y= x[0].parentNode.getElementsByClassName("btn");
-		let z= y[0].getElementsByClassName("sign")[0];
-		if(z.innerHTML=='+')
-			z.innerHTML="-";
-		else
-		{
-			let w= y[0].getElementsByClassName("sign")[0];
-			if(w.innerHTML=='-')
-			w.innerHTML="+";
-		}				
-		
-	}
+
+const faqBtn = document.querySelectorAll(".btn")
+
+faqBtn.forEach(function (button) {
+    button.addEventListener("click", function () {
+        faqBtn.forEach(function (btn) {
+            if (!btn.classList.contains("collapsed")) {
+                btn.classList.add("expand")
+            } else {
+                btn.classList.remove("expand")
+
+            }
+        })
+    })
+})
