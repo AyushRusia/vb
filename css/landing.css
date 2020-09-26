@@ -1,16 +1,17 @@
-body
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}body
 {
-	background-image: linear-gradient(to bottom, rgb(32, 16, 55), 	rgb(148, 57, 172));
-	background-color:rgb(148, 57, 172);
-	
-	margin:0;
-	
+		background:linear-gradient(to bottom, #5d3483 ,#b77ed8);
 }
 .hd
 {
   background: linear-gradient(to bottom, #372750 ,#4e0a75);
-  position: static;;
-	
+  
 }
 .my-navbar {
   background: linear-gradient(to bottom, #372750 ,#4e0a75);
@@ -26,28 +27,35 @@ body
 {
 
 }
-main
+.main
 {
- 
+  padding-bottom: 0;
+  margin-bottom:0px;
+
+}
+footer
+{
+  margin-top: 0px;;
 }
 .home
 {
+  padding-left: 0;
+  padding-right: 0;
 	background-position:bottom;
-	background-size: cover;
 	text-align:center;
-	color:white;
   background-image:url("../pictures/background.jpg");
-  
-  background-size: cover;;
-	min-height: 86vh;
-	
-	
+  background-size: cover;
+  min-height:100vh; ;		
 }
 
 #sponsor
 {
-  padding-top:3%;
-  color:#004321;
+  font-size:125%;
+  margin-top: 11vh;
+  padding-top:15vh;
+  color:#e24277;
+  font-weight:400;
+
 }
 #logo
 {
@@ -71,10 +79,8 @@ main
 #now_online
 {
 	font-family: "Montserrat", sans-serif;
-	color:white;
 	font-weight:900;
 	animation-name:blink;
-	animation-timing-function:linear;
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
 }
@@ -125,32 +131,29 @@ main
   border-radius: 2rem;
 }
 
-.register {
-  border: 2px solid #c71642;
-  background: #c71642;
-  border-radius: 2rem;
+.section-heading {
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  color: #7a070d;
 }
-
-/* About Section */
-
 .about-section {
-  padding: 10vh 0;
+  padding-top: 10vh;
 }
 
 .about-text h1 {
-  text-align: center;
-  padding: 1.2rem 1.2rem 0 1.2rem;
   letter-spacing: 0.3rem;
 }
-.about-text p {
-  padding: 1rem;
+.about-image img {
+  width: 90%;
+  border-radius: 0.2rem;
 }
-
 /* Schedule Section */
 
-/* .schedule-section {
-  background: linear-gradient(#ffffff, #6f0f87);
-} */
+.schedule-section,
+.gallery-section,
+.faq-section {
+  padding-top: 8vh;
+}
 
 .sch-box {
   padding: 1.6rem;
@@ -158,7 +161,6 @@ main
   margin: 2rem;
   border-radius: 1rem;
   box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.25);
-  /* height: 20rem; */
 }
 .sch-box p {
   font-size: 1rem;
@@ -173,19 +175,8 @@ main
   font-weight: 700;
   color: #c71642;
 }
-.schedule-heading {
-  position: relative;
-}
-.sch-big {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 3.2rem;
-  font-weight: bolder;
-  letter-spacing: 0.5rem;
-  color: #c55ede;
-  z-index: -1;
+.img {
+  padding: 0 2px 2px 0;
 }
 /* Media Queries */
 
@@ -216,33 +207,25 @@ main
   }
 }
 
-/* 
-  X-Small devices (portrait phones, less than 576px)
-  No media query for `xs` since this is the default in Bootstrap
-  
-  Small devices (landscape phones, 576px and up) */
-/* @media only screen and (max-width: 767px) {
-  .sch-box {
-    height: auto;
+
+@media (max-width: 992px) {
+  /* About Section */
+  .about-section {
+    padding-top: 0;
   }
-} */
-
-@media (min-width: 576px) {
-  /* .about-section .row .col-md-6 .about-text {
-    padding: 1rem;
-  } */
+  .about-desktop {
+    display: none;
+  }
+  .about-section .row .col-md-10 .about-text {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
 }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* About Section */
-  .about-section .row .col-md-10 .about-image img {
-    width: 90%;
-    border-radius: 0.2rem;
+  .about-mobile {
+    display: none;
   }
   .about-section .row .col-md-10:last-child {
     position: relative;
@@ -259,18 +242,67 @@ main
     box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.25);
     z-index: 1;
   }
-  .about-big {
+  .vb19 {
     position: absolute;
-    top: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.9;
+    bottom: 0;
+    transform: translateX(-70%);
+  }
+}
+
+/*MEDIA QURIES*/
+
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .last-row {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+@media (max-width: 992px) {
+  /* About Section */
+  .about-section {
+    padding-top: 0;
+  }
+  .about-desktop {
+    display: none;
+  }
+  .about-section .row .col-md-10 .about-text {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+}
+@media (min-width: 992px) {
+  /* About Section */
+  .about-mobile {
+    display: none;
+  }
+  .about-section .row .col-md-10:last-child {
+    position: relative;
+  }
+  .about-section .row .col-md-10 .about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20%;
+    background: white;
+    border-radius: 0.2rem;
+    text-align: left;
     padding: 2rem 2rem 2rem 5rem;
-    font-size: 3.6rem;
-    font-weight: bolder;
-    letter-spacing: 0.3rem;
-    color: #c55ede;
-    z-index: -1;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.25);
+    z-index: 1;
   }
   .vb19 {
     position: absolute;
@@ -279,10 +311,20 @@ main
   }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) 
-{
+@media (min-width: 576px) {
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .last-row {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
