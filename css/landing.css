@@ -1,4 +1,4 @@
-*{
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }body
 {
-		background:linear-gradient(to bottom, #5d3483 ,#b77ed8);
+		background-color:#d8bfd8 ;
 }
 .hd
 {
@@ -45,14 +45,13 @@ footer
 	text-align:center;
   background-image:url("../pictures/background.jpg");
   background-size: cover;
-  min-height:100vh; 
-	margin-top:0;
+  min-height:100vh;
+margin-top:0;
 }
 
 #sponsor
 {
   font-size:125%;
-  margin-top: 11vh;
   padding-top:15vh;
   color:#e24277;
   font-weight:400;
@@ -84,6 +83,7 @@ footer
 	animation-name:blink;
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
+	font-size:120%;
 }
 @keyframes blink
 {
@@ -260,6 +260,10 @@ footer
   .last-row {
     display: none;
   }
+	.home
+	{
+		margin-top:11vh;
+	}
 }
 @media (min-width: 768px) {
 }
@@ -331,5 +335,3 @@ footer
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 }
-
-
