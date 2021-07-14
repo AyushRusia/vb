@@ -4,14 +4,15 @@ table .time
 		text-align:center;
 		border-collapse:separate;
         border-spacing: 20px 0;
-		margin:20px;
+		margin-top:2%;
+		
 	}
 	
 .time th
 
 {		
 		
-		background:#000000;
+		background:#fff;
 		border:2px #6f0f87 solid;
 		border-radius:50%;
 		color:#d40000;
@@ -24,25 +25,26 @@ table .time
 	{
 		height:max-height;
 		width:max-width;
-		font-family:Bradley Hand, cursive;
-		color:#000000;
+		font-family: cursive;
+		color:#fff;
 		text-align:center;
 		font-size:75%;
 		font-weight:700;
 	}
 
-#myBtn {
+	#myBtn {
 		display:none;
 		position: fixed;
-		bottom: 20px;
-		right: 30px;
+		bottom: 10px;
+		right: 10px;
 		z-index: 99;
 		font-size: 54px;
 		border: none;
 		outline: none;
-		color: #000000;
+		color: #7a070d;
 		cursor: pointer;
-		padding: 15px;
+		padding: 5px;
 		
 	  }
-	
+	  </style>
+
